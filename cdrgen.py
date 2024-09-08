@@ -6,7 +6,7 @@ import subprocess
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 from abnumber import Chain
 import torch.nn.functional as F
-
+from antipasti.utils.torch_utils import load_checkpoint
 from alphafold import generate_structure
 
 def load_model(model_dir):
